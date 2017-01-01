@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.49BETA4 scan initiated Tue Dec 13 02:08:48 2016 as: nmap -T4 -A -p 1-1000 -oX temp1.xml 172.21.130.21 -->
+<nmaprun scanner="nmap" args="nmap -T4 -A -p 1-1000 -oX temp1.xml 172.21.130.21" start="1481612928" startstr="Tue Dec 13 02:08:48 2016" version="6.49BETA4" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1000" services="1-1000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1481612929" endtime="1481612959"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="172.21.130.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="999">
+<extrareasons reason="resets" count="999"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.4.7" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.7</cpe></service><script id="http-methods" output="No Allow or Public header in OPTIONS response (status code 301)"/><script id="http-robots.txt" output="22 disallowed entries (15 shown)&#xa;/api/ /data/ /source/ /install/ /template/ /config/ &#xa;/uc_client/ /uc_server/ /static/ /admin.php /search.php &#xa;/member.php /api.php /misc.php /connect.php"/><script id="http-server-header" output="Apache/2.4.7 (Ubuntu)"><elem>Apache/2.4.7 (Ubuntu)</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<osmatch name="QEMU user mode network gateway" accuracy="91" line="78447">
+<osclass type="general purpose" vendor="QEMU" osfamily="QEMU" accuracy="91"><cpe>cpe:/o:qemu:qemu</cpe></osclass>
+</osmatch>
+<osmatch name="Bay Networks BayStack 450 switch (software version 3.1.0.22)" accuracy="86" line="8436">
+<osclass type="switch" vendor="Bay Networks" osfamily="embedded" accuracy="86"><cpe>cpe:/h:baynetworks:baystack_450</cpe></osclass>
+</osmatch>
+<osmatch name="Bay Networks BayStack 450 switch (software version 4.2.0.16)" accuracy="86" line="8454">
+<osclass type="switch" vendor="Bay Networks" osfamily="embedded" accuracy="86"><cpe>cpe:/h:baynetworks:baystack_450</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco CSS 11501 switch" accuracy="86" line="12895">
+<osclass type="switch" vendor="Cisco" osfamily="embedded" accuracy="86"><cpe>cpe:/h:cisco:css_11501</cpe></osclass>
+</osmatch>
+<osmatch name="Cabletron ELS100-24TXM Switch or Icom IC-7800 radio transceiver" accuracy="85" line="11032">
+<osclass type="switch" vendor="Cabletron" osfamily="embedded" accuracy="85"><cpe>cpe:/h:cabletron:els100-24txm</cpe></osclass>
+<osclass type="specialized" vendor="Icom" osfamily="embedded" accuracy="85"><cpe>cpe:/h:icom:ic-7800</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco Catalyst 1900 switch or RAD IPMUX-1 TDM-over-IP multiplexer" accuracy="85" line="12835">
+<osclass type="switch" vendor="Cisco" osfamily="embedded" accuracy="85"><cpe>cpe:/h:cisco:catalyst_1900</cpe></osclass>
+<osclass type="switch" vendor="RAD Data Communications" osfamily="embedded" accuracy="85"/>
+</osmatch>
+<osmatch name="Sanyo PLC-XU88 digital video projector" accuracy="85" line="80251">
+<osclass type="media device" vendor="Sanyo" osfamily="embedded" accuracy="85"><cpe>cpe:/h:sanyo:plc-xu88</cpe></osclass>
+</osmatch>
+<osmatch name="Canon PIXMA MX850 printer" accuracy="85" line="11675">
+<osclass type="printer" vendor="Canon" osfamily="embedded" accuracy="85"><cpe>cpe:/h:canon:pixma_mx850</cpe></osclass>
+</osmatch>
+<osmatch name="Dell 1815dn printer" accuracy="85" line="19830">
+<osclass type="printer" vendor="Dell" osfamily="embedded" accuracy="85"><cpe>cpe:/h:dell:1815dn</cpe></osclass>
+</osmatch>
+<osmatch name="VxWorks" accuracy="85" line="88502">
+<osclass type="general purpose" vendor="Wind River" osfamily="VxWorks" accuracy="85"><cpe>cpe:/o:windriver:vxworks</cpe></osclass>
+</osmatch>
+</os>
+<distance value="2"/>
+<tcpsequence index="17" difficulty="Good luck!" values="180C401,181BE01,182B801,183B201,184AC01,186A001"/>
+<ipidsequence class="Incremental" values="9F1,9F2,9F3,9F4,9F5,9F6"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="10.0.2.2" rtt="0.08" host="localhost"/>
+<hop ttl="2" ipaddr="172.21.130.21" rtt="0.14" host="localhost"/>
+</trace>
+<times srtt="22127" rttvar="41015" to="186187"/>
+</host>
+<runstats><finished time="1481612959" timestr="Tue Dec 13 02:09:19 2016" elapsed="31.25" summary="Nmap done at Tue Dec 13 02:09:19 2016; 1 IP address (1 host up) scanned in 31.25 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
